@@ -1,4 +1,4 @@
-const stopwatch=function()const stopwatch = function() {
+const stopwatch = function() {
   const timer = document.getElementById("timer");
     timer.textContent--;
   setTimeout(stopwatch, 500);
