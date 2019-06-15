@@ -1,16 +1,16 @@
-const clicker__counter=document.getElementById("clicker__counter");
-const stopwatch=function() {
-  clicker__counter.textContent++;
-  setTimeout(stopwatch, 1000);
-  alert();
-}
-const cookie=document.getElementById("cookie");
-function changeSizes() {
-  if (clicker__counter%2==0) {
-    cookie.width=400;
-  else if cookie.width=250;
-  } 
+const clicker__counter = document.getElementById("clicker__counter");
+const stopwatch = function() {
+	clicker__counter.textContent++;
+	alert();
 };
-cookie.onclick=changeSizes;
+setInterval(stopwatch, 1000);
+
+function changeSizes() {
+const cookie = document.getElementById("cookie").onclick;	
+	if (clicker__counter % 2 == 0) {
+		cookie.width = 400;
+		else cookie.width = 250;
+	}
+};
 stopwatch();
 changeSizes();
