@@ -1,10 +1,10 @@
 const stopwatch = function() {
 	const timer = document.getElementById("timer");
 	timer.textContent--;
-	setInterval(stopwatch, 1000);
-	if (timer.textContent == 0) {
+	if (timer.textContent == -1) {
 		alert("«Вы победили в конкурсе!»");
 		clearInterval(stopwatch); 
 	}
 }
+setInterval(stopwatch, 1000);
 stopwatch();
